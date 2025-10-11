@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AULA-FORMS</title>
+  </head>
+  <body>
+    <h1>AULA-FORMS</h1>
+    <form action="">
+      <!-- atributo method para apis -->
+      <label for="nome">Nome: </label>
+      <input id="nome" name="nome" type="text" />
+      <!-- for e id tem que ter o mesmo nome, linkando label com o input -->
+
+      <label for="email">E-mail:</label>
+      <input id="email" name="email" type="email" />
+
+      <label for="senha">Senha:</label>
+      <input id="senha" name="senha" type="password" />
+
+      <label for="telefone">Telefone:</label>
+      <input id="telefone" name="telefone" type="tel" />
+
+      <label for="data">Data:</label>
+      <input id="data" name="data" type="date" />
+      <!-- datetime e datetime-local -->
+
+      <!-- tipo radio, apenas uma opção -->
+      <h3>Qual sua Linguagem preferida?</h3>
+
+      <input name="fav_lang" type="radio" value="python" />
+      <label for="">Python</label>
+
+      <input name="fav_lang" type="radio" value="java" />
+      <label for="">Java</label>
+
+      <input name="fav_lang" type="radio" value="c#" />
+      <label for="">C#</label>
+
+      <!-- name fav.. para conseguir selecionar apenas 1 input -->
+      <br />
+
+      <!-- tipo checkbox, selecionar uma ou mais caixinhas -->
+      <input type="checkbox" />
+      <label for="">Aceito os termos</label>
+      <br />
+      <input type="checkbox" />
+      <label for="">Participar da Comunidade</label>
+      <input type="submit" value="Enviar" />
+    </form>
+  </body>
+</html>

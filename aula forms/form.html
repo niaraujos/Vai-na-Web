@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Básico</title>
+  </head>
+  <body>
+    <h1>Estrutura Básica de um Formulário</h1>
+
+    <form action="">
+      <fieldset>
+        <legend>Inscrição ONG</legend>
+        <!-- Campo para nome completo -->
+        <label for="nome">Nome completo:</label>
+        <input type="text" id="nome" name="nome" required />
+
+        <!-- Campo de email -->
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+
+        <!-- Campo para telefone -->
+        <label for="telefone">Telefone:</label>
+        <input
+          type="tel"
+          id="telefone"
+          name="telefone"
+          placeholder="(81) 99999-9999"
+        />
+
+        <!-- Campo de idade -->
+        <label for="idade">Idade:</label>
+        <input type="number" id="idade" name="idade" />
+
+        <!-- Opções de turno com input tipo radio -->
+        <p>Turno desejado:</p>
+
+        <input type="radio" id="manha" name="turno" value="manha" />
+        <label for="manha">Manhã</label>
+
+        <input type="radio" id="tarde" name="turno" value="tarde" />
+        <label for="tarde">Tarde</label>
+
+        <input type="radio" id="noite" name="turno" value="noite" />
+        <label for="noite">Noite</label>
+
+        <!-- Campo de seleção-->
+
+        <label for="area">Area de interesse</label>
+
+        <select name="area" id="area">
+          <option value="">Selecione</option>
+          <option value="doacao">Doação Dinheiro</option>
+          <option value="manutencao">Manutenção de máquinas</option>
+          <option value="leitura">Leitura</option>
+          <option value="cozinha">Cozinha</option>
+        </select>
+
+        <!-- Campo de tempo-->
+        <label for="tempo">Disponibilidade semanal (horas):</label>
+        <input type="number" id="tempo" name="tempo" min="1" max="40" />
+
+        <!-- Campo de mensagem-->
+        <label for="mensagem"></label>
+        <textarea
+          name="mensagem"
+          id="mensagem"
+          rols="4"
+          cols="50"
+          placeholder="conte mais sobre..."
+        ></textarea>
+
+        <!-- Campo de termos-->
+        <input type="checkbox" id="termos" name="termos" required />
+        <label for="termos">Aceito os termos</label>
+
+        <!-- enviar formulário-->
+        <input type="submit" value="Enviar Inscrição" />
+      </fieldset>
+    </form>
+
+    <!-- 
+    Os Atributo Method e Action
+
+    O action atributo define a ação a ser executada quando o formulário é enviado.
+    Normalmente, os dados do formulário são enviados para um arquivo no servidor quando o usuário clica no botão Enviar.
+
+
+     O methodatributo especifica o método HTTP a ser usado ao enviar os dados do formulário.
+
+    Os dados do formulário podem ser enviados como variáveis ​​de URL (com method="get") ou como transação HTTP post (com method="post").
+
+    O método HTTP padrão ao enviar dados de formulário é GET. 
+    
+    //Notas sobre GET:
+
+Acrescenta os dados do formulário à URL, em pares nome/valor
+NUNCA use GET para enviar dados confidenciais! (os dados do formulário enviado ficam visíveis na URL!)
+O comprimento de uma URL é limitado (2048 caracteres)
+Útil para envios de formulários onde um usuário deseja marcar o resultado
+GET é bom para dados não seguros, como strings de consulta no Google
+
+//Notas sobre POST:
+
+Adiciona os dados do formulário dentro do corpo da solicitação HTTP (os dados do formulário enviado não são exibidos na URL)
+O POST não tem limitações de tamanho e pode ser usado para enviar grandes quantidades de dados.
+Os envios de formulários com POST não podem ser marcados
+
+//Dica: Sempre use POST se os dados do formulário contiverem informações pessoais ou confidenciais! 
+
+<form> Define um formulário HTML para entrada do usuário
+<input> Define um controle de entrada
+<textarea> Define um controle de entrada multilinha (área de texto)
+<label> Define um rótulo para um elemento <input>
+<fieldset> Agrupa elementos relacionados em um formulário
+<legend> Define uma legenda para um elemento <fieldset>
+<select> Define uma lista suspensa
+<optgroup> Define um grupo de opções relacionadas em uma lista suspensa
+<option> Define uma opção em uma lista suspensa
+<button> Define um botão clicável
+<datalist> Especifica uma lista de opções predefinidas para controles de entrada
+<output> Define o resultado de um cálculo
+    
+<input type="button">
+<input type="checkbox">
+<input type="color">
+<input type="date">
+<input type="datetime-local">
+<input type="email">
+<input type="file">
+<input type="hidden">
+<input type="image">
+<input type="month">
+<input type="number">
+<input type="password">
+<input type="radio">
+<input type="range">
+<input type="reset">
+<input type="search">
+<input type="submit">
+<input type="tel">
+<input type="text">
+<input type="time">
+<input type="url">
+<input type="week">
+    -->
+  </body>
+</html>

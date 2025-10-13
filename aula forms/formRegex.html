@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aula Forms(regex)</title>
+  </head>
+  <body>
+    <h1>Cadastro</h1>
+
+    <form action="">
+      <label for="nome">Nome:</label>
+      <input
+        type="text"
+        name="nome"
+        id="nome"
+        placeholder="Digite seu nome"
+        pattern="^[A-Za-zÀ-ÿ\s]{3,50}$"
+        title="o nome deve conter apenas letras e espaços9min 3 caracteres"
+      />
+
+      <br />
+
+      <label for="cpf">CPF:</label>
+      <input
+        type="text"
+        id="cpf"
+        name="cpf"
+        placeholder="000.000.000-00"
+        pattern="^\d{3}\.?\d{3}\.?\d{3}-?\d{2}$"
+        title="digite um cpf válido"
+      />
+      <!--
+
+Para CNPJ
+/^\d{2}\.\d{3}\.\d{3}\/\d{4}\-\d{2}$/
+
+Para ambos ao mesmo tempo
+
+/(^\d{3}\.\d{3}\.\d{3}\-\d{2}$)|(^\d{2}\.\d{3}\.\d{3}\/\d{4}\-\d{2}$)/ 
+
+apenas para envio de input, existe outra forma de validção(calculo) dos numeros corretos-->
+      <input type="submit" />
+    </form>
+  </body>
+</html>

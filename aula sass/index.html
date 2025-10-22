@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Box-model</title>
+  </head>
+  <body>
+    <main>
+      <section class="form-container">
+        <h1>CADASTRO</h1>
+        <form action="">
+          <input
+            type="text"
+            placeholder="NOME DO USUÁRIO"
+            name="nome"
+            required
+          />
+          <input type="email" placeholder="EMAIL" name="email" required />
+          <input type="password" placeholder="SENHA" name="senha" required />
+          <div>
+            <input type="text" placeholder="12/03/2005" name="data" />
+            <input type="tel" placeholder="(75) 98893-8822" name="telefone" />
+          </div>
+
+          <label for="checkbox">
+            <input type="checkbox" value="termos" id="checkbox" />
+            Aceito os <a href="">termos de uso</a> e
+            <a href="">politicas de privacidade</a> *
+          </label>
+          <input type="button" value="Cadastrar" />
+        </form>
+      </section>
+    </main>
+  </body>
+</html>

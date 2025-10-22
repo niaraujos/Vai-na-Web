@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main {
+  background-image: url("/img/valorant.jpg");
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  padding-top: 55px;
+}
+
+.form-container {
+  background-color: white;
+  width: 40vw;
+  height: 80vh;
+  display: inline-block;
+  padding: 40px 30px;
+  border-radius: 20px;
+}
+.form-container h1 {
+  margin-bottom: 25px;
+  font-size: 22px;
+}
+.form-container form input[type=text],
+.form-container form input[type=email],
+.form-container form input[type=password],
+.form-container form input[type=tel] {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  font-size: 14px;
+}/*# sourceMappingURL=style.css.map */
